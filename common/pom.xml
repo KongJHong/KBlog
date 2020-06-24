@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>KBlog</artifactId>
+        <groupId>com.hong</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <description>公共模块，可以单独抽出</description>
+
+    <artifactId>common</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+         <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- 使用连接池需要添加的依赖，不开可以不加 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+             <artifactId>commons-pool2</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+    </dependencies>
+</project>
