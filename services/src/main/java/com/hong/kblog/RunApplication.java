@@ -1,7 +1,8 @@
-package com.hong;
+package com.hong.kblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Author : KongJHong
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Description     : 启动类
  */
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.hong"})
 public class RunApplication {
      public static void main(String[] args) {
         SpringApplication.run(RunApplication.class,args);
